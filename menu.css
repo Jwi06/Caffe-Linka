@@ -1,0 +1,507 @@
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*background img*/
+.banner {
+    width: 100%;
+    height: 110vh;
+    background: linear-gradient(rgba(24, 24, 23, 0.397)50%, rgba(24, 24, 23, 0.397)50%), url(frame.jpeg); 
+    background-position: center;
+    background-size: cover; 
+}
+
+/*navigation bar*/
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background: #ffffff;
+    padding: 5px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-left: 10px;  
+    z-index: 10;
+}
+
+/*logo*/
+.logo img {
+    height: 12vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-left: 5PX;
+}
+
+/*nav*/
+.navbar ul {
+    text-align: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding-top: 10px;
+}
+
+.navbar ul li a {
+    font-family: monospace;
+    font-size: larger;
+    color: rgb(43, 120, 32);
+    text-decoration: none;
+    padding: 5px 35px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    color: rgb(255, 187, 0);
+    transition: 0.3s;
+}
+
+/* cart icon */
+.carticon {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 8px;
+}
+
+.carticon a {
+    color: rgb(25, 69, 19);
+    font-size: 20px;
+    transition: 0.3s;
+    margin-right: 20px;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.carticon a:hover {
+    color: rgb(255, 187, 0);
+}
+
+.ordernow {
+    background-color: white;
+    border: #125f1d 2px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.ordernow:hover {
+    border:rgb(255, 187, 0) 2px solid;
+
+}
+
+
+/* 4 div Menu */
+.categories-title {
+    text-align: center;
+    font-family: monospace;
+    font-size: 50px;
+    color:  rgb(246, 197, 49);
+    letter-spacing: 3px;
+    text-decoration: underline;
+    position: relative;
+    top: 70px;
+}
+
+.menu-cont {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    top: 18%;    
+}
+
+.card {
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid rgb(255, 255, 255);   
+    position: relative;
+    transition: transform 0.5s ease; 
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-size: 24px;
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card:hover .card-text {
+    opacity: 1; 
+}
+
+.card:hover img {
+    filter: brightness(0.5); 
+}
+
+/*Side navbar*/
+.side-navbar {
+    top: 11.7%;
+    width: 200px;
+    height: 95%;
+    padding: 20px;
+    left: 0;
+    background-color:#ffffff;   
+    
+}
+
+.side-navbar h3 {
+    font-family: monospace;
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: x-large;
+}
+
+.side-navbar h2 {
+    font-family: monospace;
+    color: rgb(37, 138, 21);
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.side-navbar ul {
+    list-style: none;
+}
+
+.side-navbar ul li {
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.side-navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.side-navbar ul li a:hover {
+    color: rgb(255, 187, 0);
+    font-weight: bold;
+}
+
+/*Choices All Menu*/
+.menucont {
+    position: absolute;
+    top: 19vh;
+    left: 290px; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px; 
+    column-gap: 50px;
+    padding: 20px;
+}
+
+
+.choices {
+    width: 200px; 
+    height: 250px;
+    background-color: #f8f8f8;
+    display: flex; /* X */
+    justify-content: center; /* X */
+    align-items: center; /* X */
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    font-family: monospace;
+    border: #ffffff solid 1px;
+}
+
+.name {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%); 
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: center; 
+    background-color: #0000003a;
+    padding-bottom: 50px;
+
+}
+
+.choices img {
+    width: 100%;  
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.order-btn {
+    position: absolute;
+    bottom: 10px;  
+    left: 25%;  
+    padding: 10px 15px; /* top bottom left right */
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 2;  /*button is above other elements */ /* X */
+}
+
+.order-btn:hover {
+    background-color: #b26b00;
+}
+
+.heart-icon, .cart-icon {
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.538);  
+    padding: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;  /* Make sure icons are above the image */ /* X */
+}
+
+.heart-icon {
+    top: 10px;
+    left: 10px;
+}
+
+.cart-icon {
+    top: 10px;
+    right: 10px;
+}
+
+.heart-icon:hover {
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+.cart-icon:hover {
+    color: rgb(255, 217, 0);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #15271b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;  
+
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    
+}
+
+/* Café Name Styling */
+.footercafename h2 {
+    font-size: 24px;
+    font-family: 'monospace';
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* navbar link */
+.footerlinks {
+    position: relative;
+    right: 25px;
+}
+
+.footerlinks ul {
+    list-style: none;
+}
+
+.footerlinks ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footerlinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: monospace;
+    position: relative;
+    top: 40px;
+    right: 395px;
+}
+
+.footerlinks ul li a:hover {
+    opacity: 0.5;    
+    transition: 0.3s;
+}
+
+/* social media */
+.footersocials {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 155px;
+    
+}
+
+.socialicon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.socialicon:hover {
+    opacity: 0.5;    
+    transition: 0.3s;
+
+}
+
+/* divider */
+.footerdivider {
+    border: none;
+    border-top: 1px solid #fff; 
+    width: 94%;
+    position: relative;
+    top: 70px;
+    left: 38px;
+}
+
+/* Cards*/
+.paymentmethods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px;
+    position: relative;
+    top: 100px;
+    right: 460px;
+}
+
+.paymenticon {
+    font-size: 30px;
+}
+
+.paymenticon:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    font-family: monospace;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    top: 63%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.order-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Darker background to block interaction */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it stays on top of all elements */
+}
+
+.modal-content {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-content img {
+    width: 150px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.modal-content select, 
+.modal-content input, 
+.modal-content button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: red;
+}

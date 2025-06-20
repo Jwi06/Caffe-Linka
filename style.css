@@ -1,0 +1,1039 @@
+* {
+    margin: 0;
+    padding: 0;   
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+/*background img*/
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.500)50%, rgba(0, 0, 0, 0.500)50%),url(frame5.jpeg); 
+    background-position: center;
+    background-size: cover;
+}
+
+/*navigation bar*/
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background: #ffffff;
+    padding: 5px 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-left: 10px;  
+
+}
+
+/*logo*/
+.logo img {
+    height: 12vh;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    padding-top: 2px;
+    padding-left: 5PX;
+}
+
+/*nav*/
+.navbar ul {
+    text-align: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding-right: 3px;
+    padding-top: 10px;
+}
+
+.navbar ul li a {
+    font-family: monospace;
+    font-size: larger;
+    color: rgb(43, 120, 32);
+    text-decoration: none;
+    padding: 5px 35px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover{
+    color: rgb(255, 187, 0);
+    transition: 0.3s;
+}
+
+/* cart icon */
+.carticon {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 8px;
+}
+
+.carticon a {
+    color: rgb(25, 69, 19);
+    font-size: 20px;
+    transition: 0.3s;
+    margin-right: 20px;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.carticon a:hover {
+    color: rgb(255, 187, 0);
+}
+
+.ordernow {
+    background-color: white;
+    border: #125f1d 2px solid;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.ordernow:hover {
+    border:rgb(255, 187, 0) 2px solid;
+
+}
+
+/*HOME*/
+/*Title/Banner*/
+.name {
+    width: 100%;
+    position: relative;  
+    top: 22%;
+    left: 40px;
+}
+
+.name p1 {
+    font-family:  monospace;
+    font-size: 22px;
+    color: white;
+}
+.name h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: #ffd900;  
+}
+
+.name p {
+    margin-top: 12px;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/*order button*/
+.button {
+    position: relative; 
+    top: 27%;
+    left: 40px;
+}
+
+.order {
+    height: 40px;
+    width: 10%;
+    background-color:  rgb(25, 69, 19);
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+}
+
+.order a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: monospace;
+    font-size: large;   
+}
+
+.table {
+    height: 40px;
+    width: 10%;
+    background-color:  rgb(255, 255, 255);
+    border-radius: 8px;
+    border: none;
+}
+
+.table a {
+    text-decoration: none;
+    color:rgb(25, 69, 19);
+    font-family: monospace;
+    font-size: large;   
+}
+
+
+/*Bestseller/Featured*/
+.highlight {
+    width: 100%;
+    height: 90vh;
+    background: #ffffff;
+    }
+
+.highlight h1 {
+    text-align: center;
+    font-family: monospace;
+    padding-top: 55px;
+    color: #125f1d;
+    font-size: 25px;
+}
+
+.highlight p {
+    color: #000000;
+    text-align: center;
+    margin-top: 20px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.collection {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1   px solid rgb(123, 121, 121);   
+    position: relative;
+    top: 30px;
+    transition: transform 0.5s ease;  
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: monospace;
+    font-size: x-large;
+    color: white;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card:hover .card-text {
+    opacity: 1; 
+}
+
+.card:hover img {
+    filter: brightness(0.5); 
+}
+
+.collection i {
+    position: relative;
+    top: 145px;
+    padding-left: 100px;
+    padding-right: 100px;
+    cursor: pointer;
+}
+
+.collection i:hover {
+    color: #125f1d;
+}
+
+
+/*loc&time*/
+.abtus {
+    width: 100%;
+    height: 70vh;
+    background: #ffffff;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.abtus h1 {
+    color: #000000;
+    font-family: monospace;
+    padding-top: 50px;
+}
+
+.map {
+    width: 80%;
+    max-width: 500px;
+    border: 2px solid #b6b6b6;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 150px;
+    position: relative; 
+    bottom: 10px;
+    z-index: 1;
+}
+
+.loc {
+    position: relative;
+    bottom: 83%;
+    left: 3%;
+}
+
+.loc h1 {
+    font-family: monospace;
+    font-weight: lighter;
+}
+
+.subtext {
+    text-align: start;
+}
+
+.subtext p {
+    font-size: 14px; 
+    color: #000000; 
+    font-family: monospace;
+    position: relative;
+    left: 650px;
+    margin-top: 51px;
+    padding-bottom: 10px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.subtext a {
+    text-decoration: none;
+    position: relative;
+    left: 653px;
+    font-family: monospace;
+    font-size: 14px; 
+    z-index: 1;
+}
+
+.sched {
+    position: relative;
+    left: 250px;
+    bottom: 218px;
+}
+
+.sched p {
+    font-family: monospace;
+    line-height: 2;
+}
+
+.time {
+    position: relative;
+    left: 350px;
+    bottom: 475px;
+}
+
+.time p {
+    font-family: monospace;
+    line-height: 2;
+}
+
+.highlight, .abtus {
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.534); 
+}
+
+
+/*BOOK TABLE*/
+.coffee img{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 63%;
+    top: 30px;
+}
+
+.reserv {
+    text-align: center;
+    position: relative;
+    bottom: 470px;
+    right: 570px;
+}
+
+.reserv h1 {
+    color:  #bf9713;
+    font-family: monospace;
+}
+
+/*reservation form*/
+.reservation-form {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 450px;
+    left: 70px;
+    padding-left: 27px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+}
+
+.reservation-form label {
+    font-family: monospace;
+    margin-bottom: 5px;
+    color: #665e5e;
+    display: block;
+    margin-left: 5px;
+}
+
+.reservation-form input, .reservation-form textarea {
+    width: 100%;
+    height: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: monospace;
+    resize: none; 
+}
+
+.reservation-form textarea {
+    height: 50px; 
+    resize: none;  
+}
+
+
+/*date and time */
+.date-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date-time label {
+    width: 20%;
+    position: relative;
+    bottom: 5px;
+}
+
+.date-time input {
+    width: 55%;
+}
+
+/*first and last name */
+.name-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name-fields label {
+    width: 20%;
+    position: relative;
+    bottom: 5px;
+}
+
+.name-fields input {
+    width: 55%;
+}
+
+/*mail and phone */
+.contact-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-fields label {
+    width: 20%;
+    position: relative;
+    bottom: 5px;
+}
+
+.contact-fields input {
+    width: 55%;
+}
+
+.confirm-btn {
+    background-color: #125f1d;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin: 10px;
+}
+
+.confirm-btn:hover {
+    background-color: #1f7a33;
+}
+
+
+/*CART*/
+/*Cart&Table Go Back*/
+.back {
+    position: relative;
+    left: 50px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.back a{
+    color: #1c442b;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.back a:hover {
+    color: #c49119;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.cart img {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 610px;
+
+}
+
+.urcart {
+    text-align: center
+
+}
+
+.urcart h1 {
+    color: rgb(210, 135, 22);
+    font-family: monospace;
+    font-size: 30px;
+    padding-bottom: 10px;
+
+}
+
+.urcart p {
+    color: #444444;
+    font-family: monospace;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.shopnow button {
+    height: 40px;
+    background-color: rgb(255, 217, 0);
+    font-family: monospace;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.shopnow button a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.shopnow button:hover {
+    background-color: #ffcc00;
+}
+
+
+
+
+
+
+/*ABT US*/
+/*Mission*/
+.abt1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a684d;
+}
+
+.abt1 h1 {
+    color: white;
+    font-family: monospace;
+    font-size: 60px;
+    position: relative;
+    left: 200px;
+    top: 120px;
+}
+
+.abt1 p {
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    position: relative;
+    left: 110px;
+    top: 170px;
+    line-height: 1.8;
+}
+
+.abt1 img {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    left: 760px;
+    bottom: 263px;
+}
+
+/*Vision*/
+.abt2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a684d;
+}
+
+.abt2 h1 {
+    color: white;
+    font-family: monospace;
+    font-size: 60px;
+    position: relative;
+    left:980px;
+    top: 130px;
+}
+
+.abt2 p {
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    position: relative;
+    left: 887px;
+    top: 190px;
+    line-height: 1.8;
+}
+
+.abt2 img {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    right: 0px;
+    bottom: 231px;
+}
+
+/*Story*/
+.abt3 {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a684d;
+}
+
+.abt3 h1 {
+    color: white;
+    font-family: monospace;
+    font-size: 60px;
+    position: relative;
+    left: 220px;
+    top: 110px;
+}
+
+.abt3 p {
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+    position: relative;
+    left: 105px;
+    top: 140px;
+    line-height: 1.8;
+}
+
+.abt3 img {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    left: 760px;
+    bottom: 360px;
+}
+
+
+
+
+/*CONTACT*/
+.contact {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a684d;
+}
+
+.contact h1 {
+    color: white;
+    position: relative;
+    left: 70%;
+    top: 50px;
+    font-family: monospace;
+}
+
+.contact img {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    bottom: 448px;
+    
+}
+
+/*form*/
+.contactbox {
+    width: 30%;
+    height: 60vh;
+    background-color: white;
+    position: relative;
+    left: 905px;
+    top: 80px;
+}
+
+.sendmess {
+    color: black;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+/*imput*/
+.fname label {
+    font-family: monospace;
+    font-size: 15px;
+    color: #312f2f;
+    position: relative;
+    top: 23px;
+    left: 35px;
+}
+
+.fname input {
+    height: 20px;
+    width: 84%;
+    position: relative;
+    top: 28px;
+    left: 30px;
+}
+
+.email label {
+    font-family: monospace;
+    font-size: 15px;
+    color: #312f2f;
+    position: relative;
+    top: 45px;
+    left: 35px;
+}
+
+.email input {
+    height: 20px;
+    width: 84%;
+    position: relative;
+    top: 70px;
+    right: 15px;
+}
+
+.mess label {
+    font-family: monospace;
+    font-size: 15px;
+    color: #312f2f;
+    position: relative;
+    top: 85px;
+    left: 35px;
+}
+
+.mess input {
+    height: 20px;
+    padding-bottom: 70px;
+    width: 84%;
+    position: relative;
+    top: 110px;
+    right: 32px;
+}
+
+/*send btn*/
+.sendbtn {
+    background-color: #125f1d;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 85%;
+    margin: 10px;
+    position: relative;
+    top: 120px;
+    left: 20px;
+}
+
+.sendbtn:hover {
+    background-color: #1f7a33;
+}
+
+
+/*User*/
+.user {
+    width: 100%;
+    height: 100vh;
+    background-color: #7a684d;
+}
+
+.loginbox {
+    width: 35%;
+    height: 75vh;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 500px;
+    top: 50px;
+}
+
+.loginbox h1 {
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.email2 input {
+    position: relative;
+    left: 40px;
+    top: 100px;
+    height: 30px;
+    width: 84%;
+}
+
+.email2 ::placeholder {
+    padding-left: 10px;
+}
+
+.pass input {
+    position: relative;
+    left: 40px;
+    top: 120px;
+    height: 30px;
+    width: 84%;
+}
+
+.pass ::placeholder {
+    padding-left: 10px;
+}
+
+.loginbox p {
+    position: relative;
+    top: 135px;
+    font-family: monospace;
+    left: 40px;
+}
+
+.loginbox p a {
+    text-decoration: none;
+}
+
+.loginbtn {
+    background-color: #125f1d;
+    color: white;
+    font-size: 16px;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 84.5%;
+    margin: 5px;
+    position: relative;
+    top: 150px;
+    left: 35px;
+}
+
+.loginbox p1 {
+    position: relative;
+    top: 210px;
+    font-family: monospace;
+    right: 230px;
+}
+
+.btn {
+    position: relative;
+    top: 210px;
+    left: 43px;
+}
+
+.fb {
+    background-color: rgb(38, 61, 191);
+    padding: 15px 75px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.insta {
+    padding: 15px 75px;
+    border: none;
+    text-decoration: none;
+    color: white;
+    font-family: monospace;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #b23053;
+    cursor: pointer;
+}
+
+button .fb .insta:hover {
+    cursor: pointer;
+}
+
+.loginbox p2 {
+    position: relative;
+    top: 240px;
+    font-family: monospace;
+    left: 145px;
+}
+
+.loginbox p2 a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #15271b;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    position: relative;  
+    
+}
+
+.footercontent {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;    
+}
+
+/* Café Name Styling */
+.footercafename h2 {
+    font-size: 24px;
+    font-family: 'monospace';
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* navbar link */
+.footerlinks {
+    position: relative;
+    right: 25px;
+}
+
+.footerlinks ul {
+    list-style: none;
+}
+
+.footerlinks ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.footerlinks ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: monospace;
+    position: relative;
+    top: 40px;
+    right: 395px;
+}
+
+.footerlinks ul li a:hover {
+    opacity: 0.5;    
+    transition: 0.3s;
+}
+
+/* social media */
+.footersocials {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    top: 155px;
+    
+}
+
+.socialicon {
+    color: #fff;
+    font-size: 20px;
+}
+
+.socialicon:hover {
+    opacity: 0.5;    
+    transition: 0.3s;
+
+}
+
+/* divider */
+.footerdivider {
+    border: none;
+    border-top: 1px solid #fff; 
+    width: 94%;
+    position: relative;
+    top: 70px;
+    left: 38px;
+}
+
+/* Cards*/
+.paymentmethods {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px;
+    position: relative;
+    top: 100px;
+    right: 460px;
+}
+
+.paymenticon {
+    font-size: 30px;
+}
+
+.paymenticon:hover {
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f4f4f4;
+    font-family: monospace;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    top: 63%;
+}
+
+
